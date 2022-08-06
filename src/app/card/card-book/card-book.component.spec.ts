@@ -1,0 +1,22 @@
+import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CardBookComponent } from './card-book.component';
+
+describe('CardBookComponent', () => {
+  let component: CardBookComponent;
+  let fixture: ComponentFixture<CardBookComponent>;
+
+  beforeEach(fakeAsync(() => {
+    TestBed.configureTestingModule({
+      declarations: [ CardBookComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(CardBookComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  }));
+
+  it('should compile', () => {
+    expect(component).toBeTruthy();
+  });
+});

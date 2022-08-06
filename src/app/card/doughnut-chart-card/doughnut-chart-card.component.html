@@ -1,0 +1,23 @@
+<nz-card
+  style="
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+  "
+  [nzCover]="coverTemplate"
+>
+  <nz-card-meta
+    nzTitle="Doughnut chart card"
+    nzDescription="Doughnut chart description"
+    [nzAvatar]="avatarTemplate"
+  ></nz-card-meta>
+</nz-card>
+<ng-template #avatarTemplate>
+</ng-template>
+<ng-template #coverTemplate>
+  <!-- <img
+    alt="example"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQScvJInstXVNBxhV5QBqJYFjDiJJKq-a1RgQ&usqp=CAU"
+  /> -->
+  <app-doughnut-chart></app-doughnut-chart>
+</ng-template>

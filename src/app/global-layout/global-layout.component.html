@@ -1,0 +1,70 @@
+
+    <nz-layout>
+      <nz-header>
+        <div class="logo"></div>
+        <ul nz-menu nzTheme="dark" nzMode="horizontal" class="header-menu">
+          <li nz-menu-item nzSelected>
+            <a nz-dropdown nzTrigger="hover" [nzDropdownMenu]="menu">
+            <i nz-icon nzType="book" nzTheme="outline"></i>  Books
+            <i nz-icon nzType="down"></i>
+          </a>
+          <nz-dropdown-menu #menu="nzDropdownMenu">
+            <ul nz-menu>
+              <li nz-menu-item>Search</li>
+              <li nz-menu-item>Popular</li>
+              <li nz-menu-item>Reviews</li>
+              <li nz-menu-item>Reccomendations</li>
+              <li nz-menu-item>Sources</li>
+            </ul>
+          </nz-dropdown-menu>
+        </li>
+
+          <li nz-menu-item>Updates</li>
+          <li nz-menu-item>History</li>
+
+
+          <li nz-menu-item><a nz-dropdown nzTrigger="hover" [nzDropdownMenu]="menu2">
+            <i nz-icon nzType="read" nzTheme="outline"></i>  Library
+            <i nz-icon nzType="down"></i>
+          </a>
+          <nz-dropdown-menu #menu2="nzDropdownMenu">
+            <ul nz-menu>
+              <li nz-menu-item>Library</li>
+              <li nz-menu-item>Quick Add</li>
+              <li nz-menu-item>Library Settings</li>
+                </ul>
+          </nz-dropdown-menu></li>
+
+          <li nz-menu-item class="Profile">
+            <a nz-dropdown nzTrigger="hover" [nzDropdownMenu]="menu3">
+              <i nz-icon nzType="user" nzTheme="outline"></i>  Username
+              <i nz-icon nzType="down"></i>
+            </a>
+            <nz-dropdown-menu #menu3="nzDropdownMenu">
+              <ul nz-menu>
+                <li nz-menu-item>Profile</li>
+                <li nz-menu-item>Settings</li>
+                <li nz-menu-item>Backup</li>
+                <li nz-menu-item>Log Out</li>
+                  </ul>
+            </nz-dropdown-menu>
+          </li>
+          <li nz-menu-item style="margin-left:60%">
+            <app-searchbar></app-searchbar>
+          </li>
+        </ul>
+
+        
+        <!-- <div class="search-bar"><app-searchbar></app-searchbar></div> -->
+      </nz-header>
+      <nz-layout>
+        
+        <nz-layout class="inner-layout">
+          <nz-content>
+            <app-grid-layout></app-grid-layout>
+          </nz-content>
+        </nz-layout>
+      </nz-layout>
+      
+    </nz-layout>
+  
